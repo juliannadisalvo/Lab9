@@ -29,7 +29,7 @@ while True:
         print("Your password has been encoded and stored!\n")
 
     elif menu_input == 2:
-        print(f"The encoded password is {encode(password)}, and the orginal password {decoder(encoded_password)}.\n")
+        print(f"The encoded password is {encode(password)}, and the orginal password {decode(encoded_password)}.\n")
 
     elif menu_input == 3:
         break
