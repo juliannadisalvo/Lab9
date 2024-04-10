@@ -17,6 +17,13 @@ def encode(password):
 
     return encoded_password
 
+def decode(encoded_password):
+    decoded_passwordList = []
+    for i in range (0, len(encoded_password)):
+        decoded_passwordList.append(int(encoded_password[i])-3)
+        decoded_passwordList[i] = (str(decoded_passwordList[i]))
+    return ''.join(decoded_passwordList)
+
 
 
 while True:
@@ -29,7 +36,7 @@ while True:
         print("Your password has been encoded and stored!\n")
 
     elif menu_input == 2:
-        print(f"The encoded password is {encode(password)}, and the orginal password {decode(encoded_password)}.\n")
+        print(f"The encoded password is {encoded_password}, and the orginal password {decode(encoded_password)}.\n")
 
     elif menu_input == 3:
         break
