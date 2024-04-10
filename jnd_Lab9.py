@@ -12,7 +12,7 @@ def encode(password):
 
     encoded_password = ""
     for digit in password:
-        new_digit = str((int(digit) + 3) % 10)
+        new_digit = str((int(digit) + 3))
         encoded_password += new_digit
 
     return encoded_password
